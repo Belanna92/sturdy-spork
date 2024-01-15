@@ -1,0 +1,118 @@
+* {
+  box-sizing: border-box;
+}
+
+/* Background colour, fonts, margins */
+body{
+	font-family: 'Luminari', fantasy, serif;
+	font-style: normal;
+	font-size: 16px;
+	line-height: 1.5;
+	color: #f03da6;
+	background-color: #FCCECD;
+	margin: 0 auto;
+}
+
+/* Make all of the headings bold */
+h1, h2, h3, h4 {
+  font-weight: bold;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+/* Different requirements for each of the headings */
+h1{
+	font-size: 50px;
+	text-align: center;
+	color: #c90076;
+}
+
+h2{
+	font-size: 32px;
+	text-align: center;
+	color: #6a329f;
+}
+
+h3{
+	margin-top: 20px;
+}
+
+/* Add <strong>, <ul>, and <li> <i> tags styling back in */
+strong{
+	font-weight: bold;
+}
+
+ul, li{
+	list-style-position: inside;
+}
+
+i{
+	font-style: italic;
+}
+
+/* Set the font for <ul>, <li>, and <p> tags */
+ul, li, p{
+	font-family: serif;
+}
+
+/* Float all columns and centre text */
+.column{
+	float: left;
+	text-align: center;
+	padding: 10px;
+	background-color: #b4a7d6;
+}
+
+/* Create a hover effect for the link (image) */
+#link_image:hover{
+	opacity: 0.2;
+}
+
+/* Styles for the columns */
+#column_one{
+	display: block;
+	font-size: 20px;
+}
+
+#column_two{
+	float: right;
+}
+
+img{
+	max-height: 100%;
+	max-width: 100%;
+}
+
+/* Check on screen size and create appropriate styling to fit */
+@media only screen and (min-width:601px){
+	/* For screens over the size of 600px display 2 columns */
+	body{
+		width: 100%;
+	}
+	
+	.column{
+		width: 40%;
+	}
+	
+	#column_one{
+		margin-left: 3%;
+		margin-right: 2%;
+	}
+	
+	#column_two{
+		margin-left: 2%;
+		margin-right: 3%;
+	}
+}
+
+@media only screen and (max-width:600px){
+	/* For screens under 600px display one column on top of the other */
+	body{
+		width: 100%;
+	}
+	
+	.column{
+		float: left;
+		width: 100%;
+	}
+}
